@@ -41,7 +41,7 @@ class BaseCommand(BaseDjangoCommand):
         default from the attribute ``self.help``.
 
         """
-        return '%(prog)s {subcommand} [options]'.format(subcommand=subcommand)
+        return self.usage or '%(prog)s {subcommand} [options]'.format(subcommand=subcommand)
 
     def create_parser(self, prog_name, subcommand):
         """
@@ -54,7 +54,7 @@ class BaseCommand(BaseDjangoCommand):
             epilog=self.epilog,
             add_help=self.add_help,
             prog=self.prog,
-            usage=self.usage or self.get_usage(subcommand),
+            usage=self.get_usage(subcommand),
         )
         parser.add_argument('--version', action='version', version=self.get_version())
         self.add_arguments(parser)
