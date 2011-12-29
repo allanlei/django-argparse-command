@@ -1,4 +1,5 @@
 **Incomplete Readme**
+* handle() currently does not receive *args, just **kwargs
 
 # Usage #
 
