@@ -1,4 +1,2 @@
-include README
-include LICENSE
-include MANIFEST
-graft argcmd
+include *.txt
+recursive-include docs *.txt
