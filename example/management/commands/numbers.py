@@ -15,7 +15,6 @@ class Command(BaseCommand):
                    const=sum, default=max,
                    help='sum the integers (default: find the max)'),
     )
-    description = 'hehlo'
 
     def handle(self, *args, **options):
         args = self.arguments
