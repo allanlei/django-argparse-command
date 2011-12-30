@@ -1,2 +1,3 @@
 *.pyc
-.gitginore
+.gitignore
+/example/argcmd
