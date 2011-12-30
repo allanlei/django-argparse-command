@@ -1,5 +1,5 @@
 **Incomplete Readme**
-* handle() currently does not receive *args, just **kwargs
+Take a look at examples to get started for now.  argcmd.make_option is just a function that returns a tuple of args/kwargs ie ((), {}, ) which will later be added to the parser as parser.add_argument(*args, **kwargs).
 
 # Usage #
 
