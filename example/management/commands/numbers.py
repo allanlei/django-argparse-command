@@ -5,6 +5,15 @@ from argcmd import make_option
 """
 15.4.1. Example
 From http://docs.python.org/dev/library/argparse.html#argparse.ArgumentParser.parse_args
+
+python manage.py numbers 1 2 3 4
+    4
+
+python manage.py numbers 1 2 3 4 --sum
+    10
+
+python manage.py numbers a b c
+    argument N: invalid int value: 'a'
 """
 
 class Command(BaseCommand):
