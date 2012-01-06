@@ -15,7 +15,7 @@ setup(
     author_email = 'allanlei@helveticode.com',
     description = 'Django Commands using ArgumentParser',
     long_description=open('README.txt').read(),
-    license='LICENSE.txt',
+    license=open('LICENSE.txt').read(),
     keywords = 'django argparse commands optparse',
     url = 'https://github.com/allanlei/django-argparse-command',
     packages=find_packages_in('argcmd'),
